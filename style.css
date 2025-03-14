@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #1e90ff, #87cefa); /* Gradien biru */
+}
+
+header {
+    background: rgba(53, 66, 74, 0.9); /* Warna latar belakang dengan transparansi */
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    max-width: 85px; /* Atur ukuran maksimum logo */
+    height: auto; /* Menjaga proporsi gambar */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s; /* Efek transisi saat hover */
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Warna saat hover */
+}
+
+.hero {
+    background: #ffffff; /* Latar belakang putih */
+    color: #000000; /* Teks hitam */
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px; /* Sudut melengkung */
+    margin: 20px; /* Margin untuk jarak */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+}
+
+.hero h1 {
+    font-size: 2.5em; /* Ukuran font yang lebih besar */
+    margin-bottom: 10px; /* Jarak bawah */
+}
+
+.hero p {
+    font-size: 1.2em; /* Ukuran font untuk deskripsi */
+    margin-bottom: 20px; /* Jarak bawah */
+}
+
+.highlight {
+    color: #e8491d; /* Warna penekanan */
+    font-weight: bold; /* Menebalkan teks penekanan */
+}
+
+.hero .btn {
+    background: darkblue; /* Warna latar belakang tombol */
+    color: #ffffff; /* Warna teks tombol */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s; /* Efek transisi saat hover */
+    font-weight: bold; /* Menebalkan teks tombol */
+}
+
+.hero .btn:hover {
+    background: skyblue; /* Warna latar belakang saat hover */
+    color: #ffffff; /* Warna teks saat hover */
+}
+
+.products {
+    padding: 20px;
+    text-align: center;
+}
+
+.products h2 {
+    margin-bottom: 20px;
+    font-size: 2em; /* Ukuran font yang lebih besar untuk judul produk */
+    color: #35424a; /* Warna judul produk */
+}
+
+.product {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan yang lebih halus */
+    transition: transform 0.3s; /* Efek transisi saat hover */
+}
+
+.product:hover {
+    transform: translateY(-5px); /* Efek mengangkat saat hover */
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Sudut melengkung pada gambar */
+}
+
+.product h3 {
+    margin: 10px 0; /* Jarak atas dan bawah untuk judul produk */
+    color: #35424a; /* Warna judul produk */
+}
+
+.product p {
+    color: #666; /* Warna deskripsi produk */
+}
+
+.product .btn {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s; /* Efek transisi saat hover */
+}
+
+.product .btn:hover {
+    background: #e8491d; /* Warna latar belakang saat hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: rgba(53, 66, 74, 0.9); /* Warna latar belakang footer */
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px; /* Jarak atas untuk footer */
+}
+
+/* Bagian Tentang Kami */
+.about {
+    background: #ffffff; /* Latar belakang putih */
+    color: #000000; /* Teks hitam */
+    padding: 20px; /* Padding di dalam */
+    margin: 20px; /* Margin untuk jarak */
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+    text-align: center; /* Rata tengah */
+}
+
+.about h2 {
+    color: #35424a; /* Warna judul */
+    margin-bottom: 10px; /* Jarak bawah */
+}
+
+.about p {
+    font-size: 1.1em; /* Ukuran font untuk deskripsi */
+    line-height: 1.5; /* Jarak antar baris */
+}
+
+/* Anggota Tim */
+.team {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    justify-content: space-around; /* Menyebar anggota tim */
+    flex-wrap: wrap; /* Membungkus jika tidak muat dalam satu baris */
+    margin-top: 20px; /* Jarak atas untuk tim */
+}
+
+.team-member {
+    width: 22%; /* Lebar setiap anggota tim */
+    margin: 10px; /* Margin untuk jarak */
+    text-align: center; /* Rata tengah */
+}
+
+.team-member img {
+    border-radius: 50%; /* Membuat gambar bulat */
+    width: 150px; /* Ukuran gambar */
+    height: 150px; /* Ukuran gambar */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+}
+
+.team-member h3 {
+    margin: 10px 0 5px; /* Jarak atas dan bawah untuk nama */
+    font-size: 1.2em; /* Ukuran font untuk nama */
+}
+
+.team-member p {
+    font-size: 0.9em; /* Ukuran font untuk deskripsi anggota tim */
+    color: #666; /* Warna deskripsi */
+}
+
+/* Bagian Kontak */
+.contact {
+    background: #ffffff; /* Latar belakang putih */
+    color: #000000; /* Teks hitam */
+    padding: 30px; /* Padding lebih besar untuk ruang */
+    margin: 20px; /* Margin untuk jarak */
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+    text-align: center; /* Rata tengah */
+}
+
+.contact h2 {
+    color: #35424a; /* Warna judul */
+    margin-bottom: 20px; /* Jarak bawah */
+    font-size: 2em; /* Ukuran font yang lebih besar */
+}
+
+.contact p {
+    font-size: 1.1em; /* Ukuran font untuk deskripsi */
+    line-height: 1.5; /* Jarak antar baris */
+    margin-bottom: 20px; /* Jarak bawah */
+}
+
+.contact ul {
+    list-style: none; /* Menghilangkan bullet point */
+    padding: 0; /* Menghilangkan padding */
+    margin: 20px 0; /* Jarak atas dan bawah */
+}
+
+.contact ul li {
+    font-size: 1em; /* Ukuran font untuk daftar kontak */
+    margin: 10px 0; /* Jarak antar item */
+}
+
+.contact a {
+    color: #e8491d; /* Warna link */
+    text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+.contact a:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+}
+
+/* Formulir Kontak */
+.contact-form {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    flex-direction: column; /* Mengatur elemen dalam kolom */
+    margin-top: 20px; /* Jarak atas untuk formulir */
+    align-items: center; /* Rata tengah */
+}
+
+.form-group {
+    width: 100%; /* Lebar penuh */
+    max-width: 400px; /* Lebar maksimum */
+    margin-bottom: 15px; /* Jarak bawah untuk setiap grup */
+    text-align: left; /* Rata kiri untuk label dan input */
+}
+
+.contact-form label {
+    margin-bottom: 5px; /* Jarak bawah untuk label */
+    font-weight: bold; /* Menebalkan teks label */
+}
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 10px; /* Padding untuk input dan textarea */
+    border: 1px solid #ccc; /* Garis batas */
+    border-radius: 5px; /* Sudut melengkung */
+    width: 100%; /* Lebar penuh */
+    transition: border-color 0.3s; /* Efek transisi saat fokus */
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    border-color: #e8491d; /* Warna batas saat fokus */
+    outline: none; /* Menghilangkan outline default */
+}
+
+.contact-form button {
+    background: #35424a; /* Warna latar belakang tombol */
+    color: #ffffff; /* Warna teks tombol */
+    padding: 10px 20px; /* Padding untuk tombol */
+    border: none; /* Menghilangkan garis batas */
+    border-radius: 5px; /* Sudut melengkung */
+    cursor: pointer; /* Menunjukkan bahwa ini adalah tombol */
+    transition: background 0.3s; /* Efek transisi saat hover */
+}
+
+.contact-form button:hover {
+    background: #e8491d; /* Warna latar belakang saat hover */
+}
